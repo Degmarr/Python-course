@@ -1,4 +1,3 @@
-print("meoew")
 class Communication:
     def speak(self):
         print(" speaks")
@@ -6,7 +5,7 @@ class Communication:
 class Human(Communication):
     def speak(self, language):
         print(" speaks ", language)
-        
+        return language
 
 class Alien(Communication):
     def speak(self):

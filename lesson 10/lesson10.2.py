@@ -26,14 +26,14 @@ student2 = Student("Аль-Хайтам", 22, 2)
 for i in range(3):
     a = int(input("Введите число, соответсвующее желаемому действию: 1 - узнать информацию про персонажа, 2 - изменить группу персонажа, 3 - изменить возраст персонажа   "))
     if a == 1:
-        print(student1.name, student1.age, student1.pk, sep = "\n")
-        print(student2.name, student2.age, student2.pk, sep = "\n")
+        print("Имя: ",student1.name, "Возраст: ",student1.age, "Номер студента: ",student1.pk, sep = "\n")
+        print("Имя: ",student2.name, "Возраст: ",student2.age,"Номер студента: ", student2.pk, sep = "\n")
     elif a == 2:  
         student1.Set_Group("Кхашевар")
         student2.Set_Group("Хараватат")
     elif a == 3:
         ag = int(input("Введите желаемый возраст для Кавеха "))
         student1.Set_Age(ag)
-        ag = int(input("Введите желаемый возраст для Аль-Хайтама "))
-        student2.Set_Age(ag)
+        af = int(input("Введите желаемый возраст для Аль-Хайтама "))
+        student2.Set_Age(af)
 
