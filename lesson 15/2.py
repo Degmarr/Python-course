@@ -5,15 +5,15 @@ responce = requests.get('https://automarine.ru/eng/index.html')
 print(responce.text)
 
 soup = BeautifulSoup(responce.text, 'html.parser')
-def info():
-    print(soup.title)
+# def info():
+#     print(soup.title)
 
-def aboutus():
-    for i in soup.descendants:
-        if i.name:
-            print(i.name)
-    print(soup.text)
-    print(soup.find('div', id = 'about_us')) #attr=(id:'page)
+# def aboutus():
+#     for i in soup.descendants:
+#         if i.name:
+#             print(i.name)
+#     print(soup.text)
+#     print(soup.find('div', id = 'about_us')) #attr=(id:'page)
 
 def span():
     first_span = soup.find('span')
@@ -22,6 +22,6 @@ def span():
     else:
         print("No <span> tag found.")
 
-info
-aboutus
-span
+#info()
+#aboutus()
+span()
